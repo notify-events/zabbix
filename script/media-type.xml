@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.4</version>
+    <date>2020-01-23T20:04:26Z</date>
+    <media_types>
+        <media_type>
+            <name>notify.events (script)</name>
+            <type>SCRIPT</type>
+            <script_name>notify.events.sh</script_name>
+            <parameters>
+                <parameter></parameter>
+                <parameter>{ALERT.SUBJECT}</parameter>
+                <parameter>{ALERT.MESSAGE}</parameter>
+            </parameters>
+            <show_event_menu>NO</show_event_menu>
+        </media_type>
+    </media_types>
+</zabbix_export>

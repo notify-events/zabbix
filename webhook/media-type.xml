@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.4</version>
+    <date>2020-01-23T20:00:48Z</date>
+    <media_types>
+        <media_type>
+            <name>notify.events (webhook)</name>
+            <type>WEBHOOK</type>
+            <parameters>
+                <parameter>
+                    <name>token</name>
+                    <value></value>
+                </parameter>
+                <parameter>
+                    <name>subject</name>
+                    <value>{ALERT.SUBJECT}</value>
+                </parameter>
+                <parameter>
+                    <name>message</name>
+                    <value>{ALERT.MESSAGE}</value>
+                </parameter>
+            </parameters>
+            <script>var req = new CurlHttpRequest();&#13;
+req.AddHeader('Content-Type: multipart/form-data');&#13;
+&#13;
+Zabbix.Log(4, 'webhook request value=' + value);&#13;
+&#13;
+params = JSON.parse(value);&#13;
+&#13;
+resp = req.Post('https://dev.notify.events/api/v1/channel/source/' + params.token + '/execute',&#13;
+  'subject=' + encodeURIComponent(params.subject) + '&amp;message=' + encodeURIComponent(params.message),&#13;
+);&#13;
+&#13;
+Zabbix.Log(4, 'response code: ' + req.Status());&#13;
+&#13;
+if (req.Status() != 200) {&#13;
+    throw 'Response code: ' + req.Status();&#13;
+}&#13;
+&#13;
+return resp;</script>
+            <show_event_menu>NO</show_event_menu>
+        </media_type>
+    </media_types>
+</zabbix_export>

@@ -31,7 +31,8 @@
 
 * Name: `Notify.Events`
 * Default subject: `{TRIGGER.STATUS}: {TRIGGER.NAME}`
-* Default message: ```json
+* Default message:
+```json
 {
     "date": "{DATE}",
     "time": "{TIME}",
