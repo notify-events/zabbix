@@ -1,55 +1,63 @@
-# `# IN DEVELOPING #`
+# Zabbix notifications in Skype, Telegram, Viber, ...
 
-# Оповещения Zabbix через Notify.Events
+You can get notifications from Zabbix to [supported messengers](https://notify.events/en-US/features) using the [Notify.Events](https://notify.events) service.
 
-Вы можете получать уведомления из Zabbix в Skype, Discord, Slack, Viber, Telegram и многих других через сервис
-[Notify.Events](https://notify.events).
+#### Instruction on another languages
 
-## Zabbix 4.4 и выше
+- [Русский](docs/ru-RU.md)
 
-В версии Zabbix 4.4 и выше у вас есть возможность использовать встроенных механизм webhook.
+---
 
-## Zabbix 1.8 и выше
+## Zabbix 4.4 and higher
 
-Расположите скрипт `notify.events.sh` в `/usr/lib/zabbix/alertscripts/`
+In version Zabbix 4.4 and higher, you have the option to use the built-in webhook media-type.
 
-### В разделе "Media types"
 
-Создайте новый тип со следующими параметрами:
+Go to the "Administration" -> "Media types" section and click "Import" to upload media-type
+for Zabbix 4.4 and higher:
 
-* Name: `Notify.Events`
-* Type: `Script`
-* Script name: `notify.events.sh`
-* Script parameters:
-    * `{ALERT.SENDTO}`
-    * `{ALERT.SUBJECT}`
-    * `{ALERT.MESSAGE}`
+![media-type](docs/images/media-type.png)
 
-### В разделе "Actions"
+Upload [media-type](webhook/media-type.xml) and leave the rest default options:
 
-Создайте экшн со следующими параметрами:
+![media-type-import](docs/images/media-type-import.png)
 
-* Name: `Notify.Events`
-* Default subject: `{TRIGGER.STATUS}: {TRIGGER.NAME}`
-* Default message:
-```json
-{
-    "date": "{DATE}",
-    "time": "{TIME}",
-    "host": "{HOST.NAME}",
-    "trigger": {
-        "name": "{TRIGGER.NAME}",
-        "url": "{TRIGGER.URL}",
-        "status": "{TRIGGER.STATUS}",
-        "severity": "{TRIGGER.SEVERITY}",
-    },
-    "item": {
-        "name": "{ITEM.NAME}",
-        "value": "{ITEM.VALUE}"
-    }
-}
-```
+Create a new channel and add the source "Zabbix" in Notify.Events:
 
-Для "Recovery subject/message" задайте параметры аналогично "Default subject/message".
+![media-type-token](docs/images/media-type-token.png)
 
-### В разделе "User profile/Medie"
+After that, go to the edit page of the imported media-type in Zabbix and specify the token you
+get on the previous step:
+
+![media-type-webhook-config](docs/images/media-type-webhook-config.png)
+
+Now you can use this media-type to get notifications to the messengers you choose.
+
+---
+
+## Zabbix 1.8 and higher
+
+Go to the "Administration" -> "Media types" section and click "Import" to upload media-type
+for Zabbix 1.8 and higher:
+
+![media-type](docs/images/media-type.png)
+
+Upload [media-type](script/media-type.xml) and leave the rest default options:
+
+![media-type-import](docs/images/media-type-import.png)
+
+Create a new channel and add the source "Zabbix" in Notify.Events:
+
+![media-type-token](docs/images/media-type-token.png)
+
+After that, go to the edit page of the imported media-type in Zabbix and specify the token you get on the previous step:
+
+![media-type-webhook-config](docs/images/media-type-script-config.png)
+
+Place the [notify.events.sh](script/notify.events.sh) script to the `AlertScriptPath` directory specified
+in the Zabbix configuration file (for example `/usr/lib/zabbix/alertscripts/`)
+
+Set the execute permission to this script:
+`chmod +x notify.events.sh`
+
+Now you can use this media-type to get notifications to the messengers you choose.
