@@ -35,10 +35,10 @@ Now you can use this media-type to get notifications to the messengers you choos
 
 ---
 
-## Zabbix 1.8 and higher
+## Zabbix 3.0 and higher
 
 Go to the "Administration" -> "Media types" section and click "Import" to upload media-type
-for Zabbix 1.8 and higher:
+for Zabbix 3.0 and higher:
 
 ![media-type](docs/images/media-type.png)
 

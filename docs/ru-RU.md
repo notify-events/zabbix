@@ -30,9 +30,9 @@
 
 ---
 
-## Zabbix 1.8 и выше
+## Zabbix 3.0 и выше
 
-Импортируйте media-type для Zabbix 1.8 и выше, для этого перейдите в раздел
+Импортируйте media-type для Zabbix 3.0 и выше, для этого перейдите в раздел
 "Administration" -> "Media types" и нажмите "Import":
 
 ![media-type](images/media-type.png)
