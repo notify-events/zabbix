@@ -8,7 +8,7 @@
             <type>SCRIPT</type>
             <script_name>notify.events.sh</script_name>
             <parameters>
-                <parameter></parameter>
+                <parameter>{ALERT.SENDTO}</parameter>
                 <parameter>{ALERT.SUBJECT}</parameter>
                 <parameter>{ALERT.MESSAGE}</parameter>
                 <parameter>{TRIGGER.NSEVERITY}</parameter>

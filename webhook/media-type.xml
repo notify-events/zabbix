@@ -8,8 +8,8 @@
             <type>WEBHOOK</type>
             <parameters>
                 <parameter>
-                    <name>token</name>
-                    <value></value>
+                    <name>to</name>
+                    <value>{ALERT.SENDTO}</value>
                 </parameter>
                 <parameter>
                     <name>subject</name>
@@ -31,7 +31,7 @@ Zabbix.Log(4, 'webhook request value=' + value);&#13;
 &#13;
 params = JSON.parse(value);&#13;
 &#13;
-resp = req.Post('https://notify.events/api/v1/channel/source/' + params.token + '/execute',&#13;
+resp = req.Post('https://notify.events/api/v1/channel/source/' + params.to + '/execute',&#13;
     'subject=' + encodeURIComponent(params.subject) +&#13;
     '&amp;message=' + encodeURIComponent(params.message) +&#13;
     '&amp;severity=' + encodeURIComponent(params.severity)&#13;
