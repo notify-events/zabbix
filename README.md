@@ -1,6 +1,18 @@
-# Zabbix notifications in Skype, Telegram, Viber, ...
+![header](images/header.svg)
 
-You can get notifications from Zabbix to [supported messengers](https://notify.events/en-US/features) using the [Notify.Events](https://notify.events) service.
+# Zabbix notifications for:
+
+- Skype
+- Telegram
+- Viber
+- SMS
+- Slack
+- Jabber / XMPP
+- Discord
+- Webpush
+- Microsoft Teams (comming soon..)
+
+You can find full supported messenger list [here](https://notify.events/en-US/features).
 
 #### Instruction on another languages
 

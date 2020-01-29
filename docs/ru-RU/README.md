@@ -1,3 +1,19 @@
+![header](../../images/header.svg)
+
+# Уведомления из Zabbix в:
+
+- Skype
+- Telegram
+- Viber
+- SMS
+- Slack
+- Jabber / XMPP
+- Discord
+- Webpush
+- Microsoft Teams (скоро..)
+
+Вы можете найти полный список поддерживаемых мессенджеров [по ссылке](https://notify.events/en-US/features).
+
 # Оповещения Zabbix в Skype, Telegram, Viber, ...
 
 Вы можете получать уведомления из Zabbix в [поддерживаемые мессенджеры](https://notify.events/ru-RU/features) при помощи сервиса [Notify.Events](https://notify.events).
