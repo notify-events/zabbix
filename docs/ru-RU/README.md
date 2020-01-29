@@ -4,9 +4,10 @@
 
 #### Инструкция на других языках
 
-- [English](../README.md)
+- [English](../../README.md)
 
 ## Варианты интеграции
 
-- [Webhook (Zabbix 4.4 и выше)](ru-RU/webhook.md)
-- [Shell script (Zabbix 3.0 и выше)](ru-RU/script.md)
+- [Webhook (Zabbix 4.4 и выше)](webhook.md)
+- [Shell script (Zabbix 3.0 и выше)](script.md)
+- Shell script с поддержкой графиков (скоро..)
