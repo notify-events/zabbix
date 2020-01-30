@@ -1,6 +1,6 @@
 # Zabbix user configuration
 
-Create a new channel and add the source "Zabbix" in Notify.Events:
+Create a new channel and add the source "Zabbix" in [Notify.Events](https://notify.events):
 
 ![notify-events-token](../../images/notify-events-token.png)
 

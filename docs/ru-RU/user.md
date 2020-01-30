@@ -1,6 +1,6 @@
 # Настройка пользователя Zabbix
 
-В Notify.Events создайте новый канал и добавьте источник "Zabbix":
+В [Notify.Events](https://notify.events) создайте новый канал и добавьте источник "Zabbix":
 
 ![notify-events-token](../../images/notify-events-token.png)
 
