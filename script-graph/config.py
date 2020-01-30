@@ -1,5 +1,5 @@
 
-zabbix_host = 'http://zabbix.server.host/'
+zabbix_host = 'http://localhost/'
 zabbix_user = 'Admin'
 zabbix_password = 'zabbix'
 
