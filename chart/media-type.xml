@@ -4,15 +4,14 @@
     <date>2020-01-23T20:04:26Z</date>
     <media_types>
         <media_type>
-            <name>notify.events (script)</name>
+            <name>notify.events (charts)</name>
             <type>SCRIPT</type>
             <script_name>notify.events.py</script_name>
             <parameters>
                 <parameter>{ALERT.SENDTO}</parameter>
                 <parameter>{ALERT.SUBJECT}</parameter>
                 <parameter>{ALERT.MESSAGE}</parameter>
-                <parameter>{TRIGGER.NSEVERITY}</parameter>
-                <parameter>{ITEM.ID1},{ITEM.ID2},{ITEM.ID3},{ITEM.ID4},{ITEM.ID5},{ITEM.ID6},{ITEM.ID7},{ITEM.ID8},{ITEM.ID9}</parameter>
+                <parameter>{TRIGGER.ID}</parameter>
             </parameters>
             <show_event_menu>NO</show_event_menu>
         </media_type>

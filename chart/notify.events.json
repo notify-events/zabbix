@@ -1,0 +1,12 @@
+{
+  "zabbix": {
+    "host": "http://localhost/",
+    "user": "Admin",
+    "password": "zabbix"
+  },
+  "chart": {
+    "period": 10800,
+    "width": 500,
+    "height": 250
+  }
+}

@@ -22,4 +22,4 @@
 
 - [Webhook (Zabbix 4.4 и выше)](webhook.md)
 - [Shell script (Zabbix 3.0 и выше)](script.md)
-- Shell script с поддержкой графиков (скоро..)
+- [Python script с поддержкой графиков (Zabbix 3.x и 4.x)](chart.md)

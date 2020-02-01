@@ -4,7 +4,9 @@
 указанному в файле конфигурации Zabbix (например `/usr/lib/zabbix/alertscripts/`)
 
 Установите права на исполнение данному скрипту:
-`chmod +x notify.events.sh`
+```shell script
+chmod +x notify.events.sh
+```
 
 Создайте media-type, для этого перейдите в раздел "Administration" -> "Media types" и добавьте
 следующие параметры:
@@ -21,6 +23,7 @@ Script parameters:
     {ALERT.SUBJECT}
     {ALERT.MESSAGE}
     {TRIGGER.NSEVERITY}
+    {TRIGGER.STATUS}
 ```
 
 как на примере ниже:

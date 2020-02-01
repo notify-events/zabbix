@@ -22,4 +22,4 @@ You can find full supported messenger list [here](https://notify.events/en-US/fe
 
 - [Webhook (Zabbix 4.4 and higher)](docs/en-US/webhook.md)
 - [Shell script (Zabbix 3.0 and higher)](docs/en-US/script.md)
-- Shell script with graphs support (coming soon..)
+- [Python script with charts support (Zabbix 3.x and 4.x)](docs/en-US/chart.md)

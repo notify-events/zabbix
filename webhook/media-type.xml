@@ -23,6 +23,10 @@
                     <name>severity</name>
                     <value>{TRIGGER.NSEVERITY}</value>
                 </parameter>
+                <parameter>
+                    <name>status</name>
+                    <value>{TRIGGER.STATUS}</value>
+                </parameter>
             </parameters>
             <script>var req = new CurlHttpRequest();&#13;
 req.AddHeader('Content-Type: application/x-www-form-urlencoded');&#13;
@@ -34,7 +38,8 @@ params = JSON.parse(value);&#13;
 resp = req.Post('https://notify.events/api/v1/channel/source/' + params.to + '/execute',&#13;
     'subject=' + encodeURIComponent(params.subject) +&#13;
     '&amp;message=' + encodeURIComponent(params.message) +&#13;
-    '&amp;severity=' + encodeURIComponent(params.severity)&#13;
+    '&amp;severity=' + encodeURIComponent(params.severity) +&#13;
+    '&amp;status=' + encodeURIComponent(params.status)&#13;
 );&#13;
 &#13;
 Zabbix.Log(4, 'response code: ' + req.Status());&#13;

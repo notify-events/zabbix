@@ -4,7 +4,9 @@ Place the [notify.events.sh](../../script/notify.events.sh) script to the `Alert
 in the Zabbix configuration file (for example `/usr/lib/zabbix/alertscripts/`)
 
 Set the execute permission to this script:
-`chmod +x notify.events.sh`
+```shell script
+chmod +x notify.events.sh
+```
 
 Go to the "Administration" -> "Media types" section and add the following parameters to create a media-type:
 
@@ -20,6 +22,7 @@ Script parameters:
     {ALERT.SUBJECT}
     {ALERT.MESSAGE}
     {TRIGGER.NSEVERITY}
+    {TRIGGER.STATUS}
 ```
 
 as you can see below:

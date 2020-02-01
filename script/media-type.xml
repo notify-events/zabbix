@@ -12,6 +12,7 @@
                 <parameter>{ALERT.SUBJECT}</parameter>
                 <parameter>{ALERT.MESSAGE}</parameter>
                 <parameter>{TRIGGER.NSEVERITY}</parameter>
+                <parameter>{TRIGGER.STATUS}</parameter>
             </parameters>
             <show_event_menu>NO</show_event_menu>
         </media_type>
