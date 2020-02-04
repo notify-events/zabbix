@@ -98,8 +98,9 @@ class Zabbix:
         graphs = self._api_request('graph.get', {
             'itemids': item_ids,
             'output': [
-                'graphid'
-            ]
+                'graphid',
+            ],
+            'limit': 3,
         })
 
         graph_ids = []
