@@ -10,7 +10,8 @@
 - Jabber / XMPP
 - Discord
 - Webpush
-- Microsoft Teams (скоро..)
+- Microsoft Teams
+- Голосовой вызов
 
 Вы можете найти полный список поддерживаемых мессенджеров [по ссылке](https://notify.events/ru-RU/features).
 

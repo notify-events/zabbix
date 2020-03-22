@@ -10,7 +10,8 @@
 - Jabber / XMPP
 - Discord
 - Webpush
-- Microsoft Teams (comming soon..)
+- Microsoft Teams
+- Voice call
 
 You can find full supported messenger list [here](https://notify.events/en-US/features).
 
