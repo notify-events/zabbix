@@ -1,6 +1,6 @@
 ![header](images/header.svg)
 
-# Zabbix notifications for:
+# Zabbix notifications to:
 
 - Skype
 - Telegram
@@ -13,9 +13,9 @@
 - Microsoft Teams
 - Voice call
 
-You can find full supported messenger list [here](https://notify.events/en-US/features).
+See the full list of supported messengers [here](https://notify.events/en-US/features).
 
-#### Instruction on another languages
+#### Read the manual in other languages
 
 - [Русский](docs/ru-RU/README.md)
 

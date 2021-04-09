@@ -8,7 +8,7 @@
 chmod +x notify.events.sh
 ```
 
-Создайте media-type, для этого перейдите в раздел "Administration" -> "Media types" и добавьте
+Создайте media type. Для этого перейдите в раздел "Administration" -> "Media types" и добавьте
 следующие параметры:
 
 ```text

@@ -1,7 +1,7 @@
 # Shell script (Zabbix 3.0 and higher)
 
 Place the [notify.events.sh](../../script/notify.events.sh) script to the `AlertScriptPath` directory specified
-in the Zabbix configuration file (for example `/usr/lib/zabbix/alertscripts/`)
+in the Zabbix configuration file (e.g. `/usr/lib/zabbix/alertscripts/`)
 
 Set the execute permission to this script:
 ```shell script
@@ -29,6 +29,6 @@ as you can see below:
 
 ![script-media-type-create](../../images/script/media-type-create.png)
 
-If you have Zabbix 4.4 and higher you can upload [media-type](../../script/media-type.xml) using import.
+If you have Zabbix 4.4 and higher you can import the upload [media type](../../script/media-type.xml).
 
 Configure your Zabbix user according to the [instructions](user.md).
