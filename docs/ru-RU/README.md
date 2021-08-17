@@ -7,6 +7,7 @@
 - Viber
 - SMS
 - Slack
+- Signal
 - Jabber / XMPP
 - Discord
 - Webpush
@@ -21,6 +22,7 @@
 
 ## Варианты интеграции
 
-- [Webhook (Zabbix 4.4 и выше)](webhook.md)
+- [Webhook (Zabbix 5.0 и выше)](webhook-5.0.md)
+- [Webhook (Zabbix 4.4 и выше)](webhook-4.4.md)
 - [Shell script (Zabbix 3.0 и выше)](script.md)
-- [Python script с поддержкой графиков (Zabbix 3.x и 4.x)](chart.md)
+- [Python script с поддержкой графиков (Zabbix 3.x, 4.x и 5.x)](chart.md)

@@ -7,6 +7,7 @@
 - Viber
 - SMS
 - Slack
+- Signal
 - Jabber / XMPP
 - Discord
 - Webpush
@@ -21,6 +22,7 @@ See the full list of supported messengers [here](https://notify.events/en-US/fea
 
 ## Integration options
 
-- [Webhook (Zabbix 4.4 and higher)](docs/en-US/webhook.md)
+- [Webhook (Zabbix 5.0 and higher)](docs/en-US/webhook-5.0.md)
+- [Webhook (Zabbix 4.4 and higher)](docs/en-US/webhook-4.4.md)
 - [Shell script (Zabbix 3.0 and higher)](docs/en-US/script.md)
-- [Python script with charts support (Zabbix 3.x and 4.x)](docs/en-US/chart.md)
+- [Python script with charts support (Zabbix 3.x, 4.x and 5.x)](docs/en-US/chart.md)

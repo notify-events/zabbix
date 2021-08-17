@@ -4,8 +4,8 @@
 
 Импортируйте media type. Для этого перейдите в раздел "Administration" -> "Media types" и нажмите "Import":
 
-![webhook-media-type-import](../../images/webhook/media-type-import.png)
+![webhook-media-type-import](../../images/webhook/media-type-4.4-import.png)
 
-Загрузите [media type](../../webhook/media-type.xml) и оставьте остальные параметры по умолчанию.
+Загрузите [media type](../../webhook/media-type-4.4.xml) и оставьте остальные параметры по умолчанию.
 
 Настройте вашего пользователя Zabbix согласно [инструкции](user.md).

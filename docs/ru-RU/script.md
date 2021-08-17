@@ -30,6 +30,4 @@ Script parameters:
 
 ![script-media-type-create](../../images/script/media-type-create.png)
 
-Для версии Zabbix 4.4 и выше вы можете импортировать [media-type](../../script/media-type.xml).
-
 Настройте вашего пользователя Zabbix согласно [инструкции](user.md).

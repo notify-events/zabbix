@@ -10,3 +10,8 @@ and specify the token you get on the previous step in the "Send to" field:
 ![user](../../images/user.png)
 
 Now you can use Notify.Events to get notifications to the messengers you choose.
+
+To test sending notifications from Zabbix to Notify.Events, you can open the media type testing dialog
+in the section "Administration" -> "Media types" -> "notify.events (webhook)" and specify the received token in the "To" field.
+
+![test](../../images/test.png)

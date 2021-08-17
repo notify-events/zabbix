@@ -29,6 +29,4 @@ as you can see below:
 
 ![script-media-type-create](../../images/script/media-type-create.png)
 
-If you have Zabbix 4.4 and higher you can import the upload [media type](../../script/media-type.xml).
-
 Configure your Zabbix user according to the [instructions](user.md).

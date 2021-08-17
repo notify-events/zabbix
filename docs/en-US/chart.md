@@ -1,4 +1,4 @@
-# Python script with charts support (Zabbix 3.x and 4.x)
+# Python script with charts support (Zabbix 3.x, 4.x and 5.x)
 
 > Experimental functionality
 
@@ -59,7 +59,5 @@ Script parameters:
 as you can see below:
 
 ![script-media-type-create](../../images/chart/media-type-create.png)
-
-If you have Zabbix 4.4 and higher you can import the [media type](../../chart/media-type.xml).
 
 Configure your Zabbix user according to the [instructions](user.md).
