@@ -15,3 +15,5 @@ media-type и в поле "Send to" укажите ранее полученны
 в разделе "Administration" -> "Media types" -> "notify.events (webhook)" и указать полученный токен в поле "To".
 
 ![test](../../images/test.png)
+
+А также не забудьте активировать действие "Report problems to Zabbix administrators" (создано по умолчанию) или создайте собственное правило (Configurations -> Actions -> Trigger Actions). Более подробную информацию об уведомлениях и действиях вы можете найти [здесь](https://www.zabbix.com/documentation/current/manual/config/notifications).
