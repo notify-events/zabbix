@@ -22,6 +22,7 @@
 
 ## Варианты интеграции
 
+- [Webhook (Zabbix 6.0 и выше)](webhook-6.0.md)
 - [Webhook (Zabbix 5.0 и выше)](webhook-5.0.md)
 - [Webhook (Zabbix 4.4 и выше)](webhook-4.4.md)
 - [Shell script (Zabbix 3.0 и выше)](script.md)

@@ -22,6 +22,7 @@ See the full list of supported messengers [here](https://notify.events/en-US/fea
 
 ## Integration options
 
+- [Webhook (Zabbix 6.0 and higher)](docs/en-US/webhook-6.0.md)
 - [Webhook (Zabbix 5.0 and higher)](docs/en-US/webhook-5.0.md)
 - [Webhook (Zabbix 4.4 and higher)](docs/en-US/webhook-4.4.md)
 - [Shell script (Zabbix 3.0 and higher)](docs/en-US/script.md)
